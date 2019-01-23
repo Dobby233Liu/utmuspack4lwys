@@ -2,7 +2,7 @@
 
 rem H-Hello? You are modding this script? Well, right, welcome.
 
-rem put them on the utdir on cd to the dir then run it on cmd
+rem put them on the utdir or cd to the dir then run it on cmd
 
 echo ALEX - Undertale music pack helper. Written by LWYS.
 

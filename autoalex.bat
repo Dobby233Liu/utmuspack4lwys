@@ -12,15 +12,16 @@ set musdir=%cd%\musicpak
 set gmrunner=%cd%\UNDERTALE.exe
 set gmdata=%cd%\data-en.win
 set origgamedir=%cd%
+set tmp22=%musdir%
 
 cd _pktmp
 
 echo Copying UNDERTALE to %cd%...
-FORFILES /P "%origgamedir%" /M *.ogg /C "cmd /c %cd%\..\autoalex_copyer.bat %origgamedir%\@file"
+FORFILES /P "%origgamedir%" /M *.ogg /C "cmd /c %tmp22%\autoalex_copyer.bat %origgamedir%\@file"
 copy ..\credits.txt .\ > nul
 copy "%gmdata%" data.win > nul
 copy "%gmrunner%" UNDERTALE-X.exe > nul
-FORFILES /P "%musdir%" /C "cmd /c %cd%\..\autoalex_copyer.bat %musdir%\@file"
+FORFILES /P "%musdir%" /C "cmd /c %tmp22%\autoalex_copyer.bat %musdir%\@file"
 
 echo Starting "%cd%\UNDERTALE-X.exe"...
 start /wait "" "%cd%\UNDERTALE-X.exe"

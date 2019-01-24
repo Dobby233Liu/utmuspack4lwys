@@ -12,7 +12,7 @@ set musdir=%cd%\musicpak
 set gmrunner=%cd%\UNDERTALE.exe
 set gmdata=%cd%\data-en.win
 set origgamedir=%cd%
-set tmp22=%musdir%
+set tmp22=%cd%
 
 cd _pktmp
 

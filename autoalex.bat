@@ -16,7 +16,7 @@ set origgamedir=%cd%
 cd _pktmp
 
 echo Copying UNDERTALE to %cd%...
-FORFILES /P "%origgamedir%" /M *.ogg /C "cmd /c %cd%\..\autoalex_copyer.bat @file"
+FORFILES /P "%origgamedir%" /M *.ogg /C "cmd /c %cd%\..\autoalex_copyer.bat %origgamedir%\@file"
 copy ..\credits.txt .\ > nul
 copy "%gmdata%" data.win > nul
 copy "%gmrunner%" UNDERTALE-X.exe > nul
